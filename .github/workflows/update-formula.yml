@@ -46,14 +46,17 @@ jobs:
           class Refranero < Formula
             desc "Offline-first command-line proverbs with optional Cervantes and Wayback imports"
             homepage "https://github.com/yacosta738/refranero"
-            url "https://github.com/yacosta738/refranero/releases/download/v${version}/refranero-${version}-aarch64-apple-darwin.tar.gz"
             version "${version}"
-            sha256 "${arm_sha}"
             license "MIT"
 
-            if Hardware::CPU.intel?
-              url "https://github.com/yacosta738/refranero/releases/download/v${version}/refranero-${version}-x86_64-apple-darwin.tar.gz"
-              sha256 "${intel_sha}"
+            on_macos do
+              url "https://github.com/yacosta738/refranero/releases/download/v${version}/refranero-${version}-aarch64-apple-darwin.tar.gz"
+              sha256 "${arm_sha}"
+
+              if Hardware::CPU.intel?
+                url "https://github.com/yacosta738/refranero/releases/download/v${version}/refranero-${version}-x86_64-apple-darwin.tar.gz"
+                sha256 "${intel_sha}"
+              end
             end
 
             def install
