@@ -5,13 +5,13 @@ class Refranero < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/yacosta738/refranero/releases/download/v0.6.0/refranero-0.6.0-aarch64-apple-darwin.tar.gz"
-      sha256 "738b3a0234fc3786400e593e70020f458e2fcc5ef9a957116e67290bb445d039"
+      url "https://github.com/yacosta738/refranero/releases/download/v0.6.1/refranero-0.6.1-aarch64-apple-darwin.tar.gz"
+      sha256 "ab451ba35d93c22808a2943f2b0a0164452d1791f989e6e52daf86c7b46d529e"
     end
 
     on_intel do
-      url "https://github.com/yacosta738/refranero/releases/download/v0.6.0/refranero-0.6.0-x86_64-apple-darwin.tar.gz"
-      sha256 "179687e3f17eaec7cb3d8cd9de23bbd6c30bd7575b207c213033da7c86463565"
+      url "https://github.com/yacosta738/refranero/releases/download/v0.6.1/refranero-0.6.1-x86_64-apple-darwin.tar.gz"
+      sha256 "170eb03c42d18fe5d343086c827ea39d6ec68a8701b86bf21773067fb7ea4507"
     end
   end
 
